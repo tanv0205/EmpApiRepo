@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-emp-pod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: emp-ctr1
+      image: tanveerdace/tanveerimages:kuber2
+      ports:
+        - containerPort: 8082
